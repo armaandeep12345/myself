@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="luxury-letter-a-logo-a-logotype-for-elegant-and-stylish-fashion-symbol-vector.jpg" alt="Logo">
+            <span>Armaandeep</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home 🏠</a></li>
+            <li><a href="#" onclick="goToResumePage()">Resume 📄</a></li>
+            <li><a href="project.html" target="_blank">Project List 📋</a></li>
+            <li><a href="contact.html" target="_blank">Contact 📞</a></li>
+            <li class="search-bar">
+                <input type="search" placeholder="Search for anything ">
+                <button>Search </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-section">
+        <h2 class="section-title">🚀 Our Projects 🌟</h2>
+        <ul class="project-list">
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project1')">
+                    <h3>💬 Project 1: Chatbox with AI 🤖</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project1" class="project-details">
+                    <p>💻 A smart chatbox powered by AI that can interact with users. Built using:</p>
+                    <ul>
+                        <li>🌐 <b>HTML</b>, <b>CSS</b>, <b>JS</b> for front-end</li>
+                        <li>🤖 <b>AI API</b> for intelligent responses</li>
+                    </ul>
+                    <a href="https://armaandeep12345.github.io/chatbot/" class="project-link" target="_blank">Open Chatbox 💬</a>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project2')">
+                    <h3>📷 Project 2: Face Recognition Attendance 👨‍💻</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project2" class="project-details">
+                    <p>🧠 A system that uses cutting-edge face recognition technology for employee attendance management.</p>
+                    <ul>
+                        <li>🌐 <b>Languages Used:</b> <b>PHP</b>,<b>js</b>, <b>OpenCV</b> for facial recognition, <b>HTML</b>, <b>CSS</b> for the front-end</li>
+                        <li>🤖 <b>Tools:</b> <b>TensorFlow</b>, <b>Keras</b> for AI model, <b>Flask</b> for backend</li>
+                    </ul>
+                    <a href="https://armaandeep12345.github.io/Face-attendance/" class="project-link" target="_blank">Explore Face Recognition System 🔍</a>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project3')">
+                    <h3>🖼️ Project 3: Upload Image Gallery 🌟</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project3" class="project-details">
+                    <p>📸 An online image gallery showcasing stunning visuals and photography. Users can upload and view images with a beautiful interface.</p>
+                    <ul>
+                        <li>🌐 <b>Languages Used:</b> <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> for front-end</li>
+                        <li>🔧 <b>Backend:</b> <b>PHP</b> for server-side functionality and image uploads</li>
+                        <li>🔌 <b>API:</b> Used for image storage and management via <b>REST API</b> to interact with a cloud service or server for storing images</li>
+                    </ul>
+                    <a href="https://armaandeep12345.github.io/ai-upload/" class="project-link" target="_blank">Explore Image Gallery 🖼️</a>
+                </div>
+            </li>
+            
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project4')">
+                    <h3>🐾 Project 4: Dog Website 🐶</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project4" class="project-details">
+                    <p>🐕 A fun and interactive website about dogs featuring tips, facts, and adorable images. Built with:</p>
+                    <ul>
+                        <li>🌐 <b>HTML</b> for structure</li>
+                        <li>🎨 <b>CSS</b> for styling</li>
+                    </ul>
+                    <p>Perfect for dog lovers! 🐾</p>
+                    <a href="https://armaandeep12345.github.io/dog-website/" class="project-link" target="_blank">Visit Dog Website 🖱️</a>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project5')">
+                    <h3>👠 Project 5: Shoes Store Website 👢</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project5" class="project-details">
+                    <p>👟 A shoes store website designed for online shopping with payment integration. Built using:</p>
+                    <ul>
+                        <li>🌐 <b>HTML</b>, <b>CSS</b>, <b>JS</b> for front-end</li>
+                        <li>🛒 <b>PHP</b> for backend and shopping cart functionality</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project6')">
+                    <h3>📧 Project 6: Mailer System 📬</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project6" class="project-details">
+                    <p>📧 A mailer system to send automated emails using PHP and PHPMailer. Built with:</p>
+                    <ul>
+                        <li>🌐 <b>PHP</b> for backend</li>
+                        <li>📨 <b>PHPMailer</b> for sending emails</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project7')">
+                    <h3>💻 Project 7: Light Pro Website (Computer Accessories) 💡</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project7" class="project-details">
+                    <p>💡 A website for selling computer accessories with an elegant design. Built using:</p>
+                    <ul>
+                        <li>🌐 <b>HTML</b>, <b>CSS</b>, <b>JS</b> for front-end</li>
+                        <li>💻 <b>PHP</b> for backend and product management</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project8')">
+                    <h3>🗣️ Project 8: Jarvis AI Voice Command 🤖</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project8" class="project-details">
+                    <p>🎤 An AI voice command system that can control various devices using Python. Built with:</p>
+                    <ul>
+                        <li>🐍 <b>Python</b> for voice recognition and command processing</li>
+                    </ul>
+                    <a href="project8-link.html" class="project-link" target="_blank">Explore Jarvis AI 🤖</a>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-title" onclick="toggleDetails('project9')">
+                    <h3>🏋️‍♂️ Project 9: Gym Website 🏃‍♀️</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div id="project9" class="project-details">
+                    <p>💪 A fitness and gym website for workout tracking and health tips. Built using:</p>
+                    <ul>
+                        <li>🌐 <b>HTML</b>, <b>CSS</b>, <b>JS</b> for front-end</li>
+                    </ul>
+                    <a href="project9-link.html" class="project-link" target="_blank">Visit Gym Website 🏋️‍♂️</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

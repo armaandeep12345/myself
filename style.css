@@ -1,0 +1,240 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #292b2c;
+    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar .search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar input[type="search"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.navbar button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Introduction Section */
+#introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #007bff, #6c757d);
+    color: white;
+}
+
+#introduction .content h1 span {
+    color: #ffc107;
+}
+
+#introduction .content .cta {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #292b2c;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Image Styling */
+.image {
+    text-align: center; /* Center the image horizontally */
+    margin: 20px 0; /* Add some space around the image */
+}
+
+.image img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: 250px; /* Maintains aspect ratio */
+    max-height: 400px; /* Set a maximum height for the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+}
+
+/* Job Skills Section */
+#skills {
+    padding: 30px 20px;
+    background-color: white;
+    color: #292b2c;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1da1f2; /* Change color on hover */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #333; /* Dark background for contrast */
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    .navbar .search-bar {
+        width: 100%;
+        margin-bottom: 10px; /* Add spacing below the search bar */
+    }
+
+    .navbar input[type="search"] {
+        width: 80%;
+        padding: 10px;
+        border-radius: 20px; /* Rounded corners for the search input */
+        border: 1px solid #ddd;
+        background-color: #f0f0f0; /* Light background for the search bar */
+        transition: all 0.3s ease;
+    }
+
+    .navbar input[type="search"]:focus {
+        border-color: #007bff;
+        background-color: #fff; /* Change background when focused */
+    }
+
+    /* Introduction Section adjustments */
+    #introduction {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    #introduction .content h1 {
+        font-size: 1.8rem;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-transform: uppercase; /* Add uppercase style for the title */
+    }
+
+    .image img {
+        height: 250px; /* Adjust image height for mobile */
+        width: 100%;
+        object-fit: cover; /* Ensure the image maintains aspect ratio */
+        border-radius: 10px; /* Rounded corners for the image */
+    }
+
+    /* Skills Section adjustments */
+    #skills ul li {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        transition: color 0.3s ease;
+    }
+
+    #skills ul li:hover {
+        color: #007bff; /* Change text color on hover */
+    }
+
+    /* Footer adjustments */
+    footer p {
+        font-size: 14px;
+        text-align: center;
+        color: #888;
+        margin-top: 30px;
+        transition: color 0.3s ease;
+    }
+
+    footer p:hover {
+        color: #333; /* Darken text color on hover */
+    }
+}
